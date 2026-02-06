@@ -49,12 +49,12 @@ export function Hero() {
     };
 
     return (
-        <section className="relative overflow-visible lg:overflow-hidden bg-slate-50 min-h-screen pt-6 pb-8 lg:pt-0 lg:pb-0 block lg:flex lg:items-center">
+        <section className="relative overflow-visible lg:overflow-hidden bg-slate-50 py-8 md:py-12 lg:py-16">
             <div className="container mx-auto px-6 md:px-12 lg:px-24">
                 <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
                     {/* Left Column: Content */}
                     <motion.div
-                        className="flex flex-col justify-center space-y-6"
+                        className="flex flex-col justify-center space-y-6 md:items-center md:text-center lg:items-start lg:text-left"
                         initial="hidden"
                         animate="visible"
                     >
@@ -171,9 +171,9 @@ export function Hero() {
                         </motion.div>
                     </motion.div>
 
-                    {/* Right Column: Image */}
+                    {/* Right Column: Image - visible on mobile & desktop, hidden on tablet */}
                     <motion.div
-                        className="relative mx-auto w-full max-w-[400px] lg:max-w-[450px]"
+                        className="relative mx-auto w-full max-w-[350px] md:hidden lg:block lg:max-w-[450px]"
                         initial="hidden"
                         animate="visible"
                         variants={scaleIn}
