@@ -134,7 +134,7 @@ export function Hero() {
                                     Drag & drop land documents here
                                 </h3>
                                 <p className="mt-1 text-sm text-gray-500">
-                                    PDF, JPG, or PNG files up to 100MB
+                                    PDF, JPG, or PNG files up to 100MB.
                                 </p>
                                 <div className="absolute inset-0 cursor-pointer" />
                             </div>
